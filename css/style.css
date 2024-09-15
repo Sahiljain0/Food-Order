@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* gap: 30px; */
+}
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100vh;
+  /* margin: 0 auto; */
+  overflow-y: hidden;
+  position: relative;
+}
+.leftslide img {
+  width: 10px;
+  height: 40px;
+}
+
+.carousel-slide {
+  display: none;
+  /* float: left; */
+  width: 100%;
+  text-align: center;
+  transition: 2s ease-in;
+}
+
+.carousel-slide img {
+  width: 100%;
+  /* height: auto; */
+}
+
+@keyframes bounceInRight {
+  0% {
+    transform: translateX(200px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-5px);
+    animation-timing-function: ease-out;
+  }
+  80% {
+    transform: translateX(10px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease-in;
+  }
+}
+
+/* .element-to-animate {
+} */
+
+.carousel-text {
+  background: rgb(22, 7, 7);
+  color: #fff;
+  position: absolute;
+  top: 170px;
+  left: 250px;
+  width: 350px;
+  height: 350px;
+  padding: 10px;
+  animation: bounceInRight 1.5s both;
+  
+}
+
+.bttn:hover {
+  background-color: white;
+  color: red;
+}
+
+/* jdbcwkdbcbbc */
+
+.image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 640px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#a1 {
+  position: absolute;
+  bottom: 0;
+}
+#a2 {
+  position: absolute;
+  bottom: 80px;
+}
+#a3 {
+  position: absolute;
+  bottom: 170px;
+  left: -60px;
+}
+#a4 {
+  position: absolute;
+  bottom: 170px;
+}
+#a5 {
+  position: absolute;
+  bottom: 210px;
+}
+#a6 {
+  position: absolute;
+  bottom: 280px;
+  left: 100px;
+}
+#a7 {
+  position: absolute;
+  bottom: 320px;
+  right: -100px;
+}
+#a8 {
+  position: absolute;
+  bottom: 330px;
+  left: -30px;
+}
+#a9 {
+  position: absolute;
+  bottom: 350px;
+}
+#a10 {
+  position: absolute;
+  bottom: 400px;
+  left: 50px;
+}
+#b1 {
+  position: absolute;
+  bottom: 0;
+}
+#b2 {
+  position: absolute;
+  bottom: 80px;
+}
+#b3 {
+  position: absolute;
+  bottom: 140px;
+  left: -65px;
+}
+#b4 {
+  position: absolute;
+  bottom: 260px;
+  left: 320px;
+}
+#b5 {
+  position: absolute;
+  bottom: 210px;
+  left: 130px;
+}
+#b6 {
+  position: absolute;
+  bottom: 280px;
+  left: 0;
+}
+#b7 {
+  position: absolute;
+  bottom: 320px;
+  left: 0;
+}
+#b8 {
+  position: absolute;
+  bottom: 380px;
+  left: -50px;
+}
+#b9 {
+  position: absolute;
+  bottom: 420px;
+}
+
+#c1 {
+  position: absolute;
+  bottom: 0;
+}
+#c2 {
+  position: absolute;
+  bottom: 80px;
+}
+#c3 {
+  position: absolute;
+  bottom: 170px;
+  left: -60px;
+}
+#c4 {
+  position: absolute;
+  bottom: 210px;
+}
+#c5 {
+  position: absolute;
+  bottom: 260px;
+}
+#c6 {
+  position: absolute;
+  bottom: 330px;
+  left: 0;
+}
+#c7 {
+  position: absolute;
+  bottom: 400px;
+  left: -10px;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200px);
+  }
+}
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.outercontainer {
+  position: absolute;
+  left: 55%;
+  top: 20px;
+}
+
+/* level 2 */
+
+.container {
+  width: 100%;
+  height: 350px;
+  /* margin: auto; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 900px;
+  height: 350px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  width: 1500px;
+  transition: 0.5s;
+  position: relative;
+  gap: 20px;
+}
+
+.card {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: Sans-serif;
+  width: 280px;
+  height: 350px;
+  background-color: rgb(250, 247, 242);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: 0.4s ease-in;
+  border-radius: 2px;
+}
+
+.card:hover {
+  border: 1px solid rgb(231, 52, 52);
+}
+
+.card:hover .icons {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes fire {
+  0% {
+    height: 25px;
+    width: 280px;
+  }
+  15% {
+    height: 28px;
+    width: 280px;
+  }
+  25% {
+    height: 31px;
+    width: 280px;
+  }
+  35% {
+    height: 33px;
+    width: 280px;
+  }
+  50% {
+    height: 35px;
+    width: 280px;
+  }
+  70% {
+    height: 30px;
+    width: 280px;
+  }
+  85% {
+    height: 27px;
+    width: 280px;
+  }
+  100% {
+    height: 25px;
+    width: 280px;
+  }
+}
+
+.card:hover .fire img {
+  opacity: 1;
+  width: 100%;
+  animation: fire 1.5s ease-in-out infinite both;
+}
+
+/* button {
+  margin-top: 10px;
+} */
+#prevBtn {
+  position: absolute;
+  top: 40%;
+  left: 30px;
+  border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid red;
+  padding: 5px;
+  color: red;
+  transition: 0.9 ease-in 1;
+}
+
+#prevBtn:hover {
+  background-color: red;
+  color: white;
+}
+#nextBtn {
+  position: absolute;
+  top: 40%;
+  right: 30px;
+  border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid red;
+  padding: 5px;
+  color: red;
+  transition: 0.9 ease-in 1;
+}
+
+#nextBtn:hover {
+  background-color: red;
+  color: white;
+}
+
+.fire {
+  position: absolute;
+  bottom: -2px;
+}
+
+.fire img {
+  opacity: 0;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  top: 10%;
+  right: 5%;
+  opacity: 0;
+  transition: 0.4s ease-in;
+  transform: translateX(10px);
+}
+
+.icons img {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 8px 8px;
+  font-weight: 700;
+}
+.icons img:hover {
+  background-color: rgb(255, 2, 2);
+}
+
+/* slider-container .slider .card:hover .icons{
+  opacity: 1;
+} */
+.view {
+  opacity: 1;
+}
+
+btnwidth {
+  width: 100px;
+}
+
+/* level 3 */
+
+.container2 {
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  gap: 40px;
+}
+.right {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.heading {
+  font-size: 24px;
+}
+
+.threecard {
+  gap: 20px;
+}
+
+.incard {
+  border-radius: 2px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: white;
+}
+
+.btncnt {
+  width: 70%;
+  justify-content: space-between;
+}
+.founder {
+  height: 55px;
+  width: 140px;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.chilli {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  animation: 3s ease-in-out 0.5s infinite alternate slide-in;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.btncnt button:hover {
+  background-color: rgb(203, 0, 0);
+}

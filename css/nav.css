@@ -1,0 +1,95 @@
+
+header{
+    /* position: fixed; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(58, 43, 43);
+    margin-bottom: 0;
+  }
+  .sticky{
+    position: fixed;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 11;
+  background: linear-gradient(45deg,pink,purple);
+  
+}
+
+.container7{
+    width: 80vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(166, 207, 193); */
+}
+
+.logo{
+    height: 100px;
+    width: 200px;
+    color: white;
+    font-size: 50px;
+    margin-left: -20px;
+    margin: auto 20px;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container7 .navbar ul{
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.container7 .navbar .ul-one li a{
+color: white;
+font-size: 25px;
+font-weight: 500;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+/* background-color: red; */
+}
+.container7 .navbar .ul-two li a{
+color: rgb(255, 0, 0);
+font-size: 22px;
+font-weight: 500;
+    text-decoration: none;
+    border: 2px solid red;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+/* background-color: red; */
+}
+.container7 .navbar .ul-one li a:hover{
+    /* background-color: rgb(245, 207, 55); */
+    color: red;
+}
+.container7 .navbar .ul-two li a:hover{
+    background-color: red;
+    color: white;
+}
+.container7 .navbar .ul-two{
+    margin-left: 10px;
+    display: flex;
+    gap: 10px;
+}
